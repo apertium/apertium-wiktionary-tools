@@ -53,7 +53,7 @@ def spider(categoryName):
             wordStart = overviewSource.find("title=",urlStart)+7
             word = overviewSource[wordStart:overviewSource.find("\"", wordStart)]
             #Check if this file has already been spidered
-            if not os.path.exists(OUTPUTDIR+word+'.xml'):    
+            if not os.path.exists(os.path.join(OUTPUTDIR,word+'.xml')):    
                 #Find url        
                 wordUrl = BASEURL + overviewSource[urlStart+len(WORDBASEURL):
                                                    overviewSource.find("\"", urlStart)]
@@ -67,7 +67,7 @@ def spider(categoryName):
                 #Record fetching time
                 lastFetch = time.time()
                 #Save url
-                with open(OUTPUTDIR+word+".xml", 'w') as f:
+                with open(os.path.join(OUTPUTDIR,word+".xml"), 'w') as f:
                     f.write(wordSource)
             minDex = urlStart + 1
         #Test if there is a next overview page. 
