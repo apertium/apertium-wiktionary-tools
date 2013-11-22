@@ -1,3 +1,4 @@
 * text=auto !eol
 /wikExtractionary.py -text
+/wikPageCounter.py -text
 /wikSpider.py -text
