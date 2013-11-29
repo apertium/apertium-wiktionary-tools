@@ -8,7 +8,7 @@ from urllib.request import *
 import urllib.parse as urlp
 
 if(len(sys.argv) < 3):   #program_name quite/verbose language
-    print("not enough arguments")
+    print("not enough arguments. Usage: python3 wikPageCounter.py [quiet|verbose] LANGUAGE")
     sys.exit()
     
 name = sys.argv[2]
