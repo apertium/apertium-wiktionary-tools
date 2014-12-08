@@ -3,4 +3,5 @@
 /wikExtractionary.py -text
 /wikPageCounter.py -text
 /wikSpider.py -text
+/wikSpider2.py -text
 /wiktPageCounter.py -text
