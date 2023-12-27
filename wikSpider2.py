@@ -1,4 +1,4 @@
-# python3
+#!/usr/bin/env python3
 # WikiScratcher
 #
 # created by __vlad__, 2014
