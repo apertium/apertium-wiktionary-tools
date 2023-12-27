@@ -159,7 +159,7 @@ def identify_if_more_than_200_pages(data):
     for elem in data:
         if pattern_1 in elem and pattern_2 in elem:
             mid = elem.split()
-            number = int(mid[-2])
+            number = int(mid[-2].replace(",", ""))
             if number > 200:
                 return 1
             return 0
